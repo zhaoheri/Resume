@@ -1,0 +1,170 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{fixltx2e}
+\usepackage{float}
+\MakeRobust{\overrightarrow}
+\usepackage{multicol}
+\usepackage[T1]{fontenc} 
+\usepackage[letterpaper, total={8.2in, 9.2in}]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx} % in the preamble
+\usepackage[parfill]{parskip}
+\pagestyle{fancy}
+\rhead{Heri Zhao}
+
+\newcommand{\myline}{\par
+  \kern3pt % space above the rules
+  \hrule height 1.5pt
+  \kern2pt % space between the rules
+  \hrule height 0.8pt
+  \kern3pt % space below the rules
+}
+
+\begin{document}
+    \thispagestyle{empty}
+
+    \noindent\begin{multicols}{3}
+    \flushleft{\textsf{(734)-709-1757\\zhaoheri@stanford.edu}}
+    \columnbreak
+    \begin{center}\textsc{\textbf{\LARGE{Heri Zhao}}}\end{center}
+    \columnbreak
+    \flushright{\textsf{GitHub: https://github.com/zhaoheri}}
+    \end{multicols}\vspace{-0.9em}
+    \hrule height 0.4pt
+    
+    %Education..............................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Education}}}}\end{center}
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Stanford | GPA: 4.19}}} & \small{\textsf{Palo Alto, CA}} \\
+        \small{\textsf{Advanced Software System Certificate}} & \small{\textsf{Jan 2016 - present}} \\
+        \small{\textsf{\textbf{University of Michigan | GPA: 3.7}}} & \small{\textsf{Ann Arbor, MI}} \\
+        \small{\textsf{Bachelor of Science in Computer Science}} & \small{\textsf{May 2015}} \\
+        \small{\textsf{\textbf{Shanghai Jiao Tong University | GPA: 3.6}}} & \small{\textsf{Shanghai, China}} \\
+        \small{\textsf{Bachelor of Electrical and Computer Engineering}} & \small{\textsf{Aug 2015}}
+    \end{tabularx}
+    
+    %Work Experience.........................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Experience}}}}\end{center}
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Yahoo! Inc.}}} & \small{\textsf{Sunnyvale, CA}} \\
+        \small{\textit{Software Dev Eng. Assoc, Video Platform Team}} & \small{\textsf{Sep 2015 - present}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Designing and building a distributed large scaled live video streaming platform with high availability by using MySQL, XQuartz, Jetty; this platform is used to broadcast most of Yahoo hosted live events including Yahoo Finance, Yahoo Taiwan, NHL game, and internal usage
+    \item Implementing live archiving feature to allow users to watch archived streams right after a live streaming is end
+    \item Designing and building an elastic chunked based video transcoding platform on AWS and S3 by using Celery, Django, RabbitMQ framework so as to provide high quality, low bitrate (save 40\% compared with CBR) transcoding service to all Yahoo videos (thousands videos per day); a patent has been filed for this project
+    \item Tuning 2-pass VBR (Variable bitrate) video transcoding parameters to save bitrate and increase video quality
+    \item Designing and building an elastic live streaming infrastructure on AWS and Nginx, targeting on serving mobile broadcasting for Yahoo Taiwan; Optimizing the end-to-end delay from 15 seconds to 8 seconds (similar to Facebook and YouTube)
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Shanghai Jiao Tong University}}} & \small{\textsf{Shanghai, China}} \\
+        \small{\textit{Teaching Assistant of Introduction to Cryptography}} & \small{\textsf{May 2015 - Aug 2015}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Held office hour per week; graded assignments and exams
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Yahoo! Inc.}}} & \small{\textsf{Sunnyvale, CA}} \\
+        \small{\textit{Internal Technical I, Video Platform API Team}} & \small{\textsf{Jun 2014 - Aug 2014}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Built a video streaming API testing tool using HTTP requests in real log files to automatically simulate the HTTP calls from large number of users to the video streaming API
+    \item Fixed bugs by comparing simulation result with expected result, decreased error rate in less 10\%
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Shanghai Jiao Tong University}}} & \small{\textsf{Shanghai, China}} \\
+        \small{\textit{Teaching Assistant of Introduction to Programming}} & \small{\textsf{May 2013 - Aug 2013}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Held office hour (3 hours per week), graded homework and exams
+    \item Delivered recitation class to around 100 student in class by slides every week (13 weeks)
+    \end{list}}
+    
+    %Project................................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Projects}}}}\end{center}
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Chinese Character Handwriting Generation in TensorFlow}}} & \small{\textsf{Palo Alto, CA}} \\
+        \small{\textit{Course Project, Team lead}} & \small{\textsf{Dec 2016}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Utilized TensorFlow framework to achieve a Recurrent Neural Network (RNN) generative model to simulate human Chinese character handwriting
+    \item Applied Long Short Term Memory (LSTM) cell, modified Gated Recurrent Unit (GRU) cell, such that the stroke prediction will condition on the character class information, instead of randomly predicting
+    \item Initial model converged on a limited training set with a simple training loss function
+    \item Took lead on project proposal, literature review and final report
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Compiler Optimization for JoeQ}}} & \small{\textsf{Palo Alto, CA}} \\
+        \small{\textit{Course Project}} & \small{\textsf{Feb 2016}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Implemented a dataflow analysis framework on JoeQ system as well as Reaching Definitions and Faint Variable analysis
+    \item Designed and implemented an optimization algorithm to remove redundant Null checks by applying Constant Propagation, Copy Propagation and Partial Redundancy Elimination
+    \item Implemented the Loop-invariant Code Motion algorithm
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Android App Volumaster}}} & \small{\textsf{Ann Arbor, MI}} \\
+        \small{\textit{Senior Design Course, Team lead}} & \small{\textsf{Jan 2015 - Apr 2015}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item An Android app which will lower the phone ring automatically when a user is in meeting, cinema, etc
+    \item Used Google Calendar API to automatically import potential events from users' calendar
+    \item Could detect user locations (i.e. in cinema) by GPS or WI-FI connection, and adjust the phone ring volume accordingly
+    \item Designed and implemented database schema, user login, multi-page flatten UI
+    \item Published on Google Play (https://play.google.com/store/apps/details?id=com.rey.material.volumaster\&hl=en)
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Search Engine Design}}} & \small{\textsf{Ann Arbor, MI}} \\
+        \small{\textit{Course Project}} & \small{\textsf{Oct 2014}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Ranked results based on both TF-IDF and PageRank scores in Python
+    \item Implemented indexing using MapReduce
+    \item Implemented interface using Javascript and HTML, backend using Flask web development platform on Python
+    \item Designed two special website features, user-driven sliders that controls parameters and deep page summarizing
+    \end{list}}
+    
+    \begin{tabularx}{\textwidth}{X r}
+        \small{\textsf{\textbf{Photo Album Blog Design}}} & \small{\textsf{Ann Arbor, MI}} \\
+        \small{\textit{Course Project}} & \small{\textsf{Sep 2014}}
+    \end{tabularx}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Designed a website with secure username/password login, identification checking, user info updating and session expiration, by MySQL and Python
+    \item Constructed user private page enabling users to create, update, scan and delete albums
+    \item Built a photo search engine that listed relevant photos according to user queries and ordered by TF-IDF scores
+    \end{list}}
+    
+    %Honor................................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Honors}}}}\end{center}
+    \textsf{
+    \begin{tabularx}{\textwidth}{X r}
+        Scholarship at Shanghai Jiao Tong University & Aug 2013 \\
+        Dean's List at University of Michigan & Dec 2013 \\
+        University Honors at University of Michigan & 2013 - 2014
+    \end{tabularx}}
+    
+    %Technical Skills................................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Technical Skills}}}}\end{center}
+    \textsf{
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Adept in computer programming: C/C++/Java/Python/JavaScript/MATLAB/Mathematica/LaTeX
+    \item Object oriented programming, RESTful API design, Test-driven development, Distributed System Design
+    \item MySQL/MongoDB, Github, Splunk, Guice, Celery, Django
+    \item Video transcoding, FFmpeg/FFprobe, H264, HLS packaging, Elemental
+    \item Languages: Verbally expert in English, mother-tongue in Mandarin
+    \end{list}}
+\end{document}
