@@ -5,7 +5,7 @@
 \MakeRobust{\overrightarrow}
 \usepackage{multicol}
 \usepackage[T1]{fontenc} 
-\usepackage[letterpaper, total={8.2in, 9.2in}]{geometry}
+\usepackage[letterpaper, total={8in, 9.2in}]{geometry}
 \usepackage{fancyhdr}
 \usepackage{tabularx} % in the preamble
 \usepackage[parfill]{parskip}
@@ -35,12 +35,10 @@
     %Education..............................................................
     \begin{center}\textrm{\textbf{\large{\underline{Education}}}}\end{center}
     \begin{tabularx}{\textwidth}{X r}
-        \small{\textsf{\textbf{Stanford | GPA: 4.14}}} & \small{\textsf{Stanford, CA}} \\
+        \small{\textsf{\textbf{Stanford University | GPA: 4.14/4.3}}} & \small{\textsf{Stanford, CA}} \\
         \small{\textsf{Advanced Software System Certificate}} & \small{\textsf{Jan 2016 - present}} \\
-        \small{\textsf{\textbf{University of Michigan | GPA: 3.6}}} & \small{\textsf{Ann Arbor, MI}} \\
-        \small{\textsf{Bachelor of Science in Computer Science}} & \small{\textsf{May 2015}} \\
-        \small{\textsf{\textbf{Shanghai Jiao Tong University | GPA: 3.5}}} & \small{\textsf{Shanghai, China}} \\
-        \small{\textsf{Bachelor of Electrical and Computer Engineering}} & \small{\textsf{Aug 2015}}
+        \small{\textsf{\textbf{University of Michigan/Shanghai Jiao Tong University | GPA: 3.6/4.0}}} & \small{\textsf{Ann Arbor, MI}} \\
+        \small{\textsf{Bachelor of Science in Computer Science}} & \small{\textsf{May 2015}}
     \end{tabularx}
     
     %Work Experience.........................................................
@@ -51,11 +49,11 @@
     \end{tabularx}
     \textsf{
     \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
-    \item Design and deliver a highly scalable content-adjusted video transcoding solution on AWS for all Yahoo videos (thousands videos per day) by leveraging Celery, Django, RabbitMQ frameworks, with up to 70\% video bitrate saving and 90\% improvement on processing time; Co-inventor for the patent \textit{Chunk Based Adaptive VBR Encoding}
-    \item Design and build an elastic live streaming infrastructure on AWS and Nginx, targeting on serving user generated content broadcasting, Yahoo studio and eCommerce with tens of thousands of concurrent live events; Optimize the end-to-end latency to less than 10 seconds (similar to Facebook and YouTube)
-    \item Design and implement a distributed live event management system with high availability with MySQL, XQuartz and Jetty; This system powers most of Yahoo hosted live events including Yahoo Finance, Yahoo Taiwan, NHL game, and internal events
-    \item Deliver a large scale real-time video highlight detection system based on computer vision, CNN and video understanding 
-    \item Prototype end-to-end 4K HEVC next generation live streaming solution with extreme low latency
+    \item \small{\textsf{\textbf{Large Scale Real-time Video Highlight Detection System on Caffe}}} - based on computer vision, CNN and Kubernetes to auto-detect game highlights for esports.
+    \item \small{\textsf{\textbf{Highly Scalable Content-adaptive Video Transcoding Solution on AWS}}} - algorithm patented with \textit{Chunk Based Adaptive VBR Encoding}; with up to 70\% video bitrate saving and 90\% improvement on processing time.
+    \item \small{\textsf{\textbf{Elastic Live Streaming Infrastructure on AWS by NVIDIA Pascal GPU}}} - serving user generated content broadcasting, Yahoo studio and eCommerce with tens of thousands concurrent live events, leading-industry low latency, and immediate ramp-up time.
+    \item \small{\textsf{\textbf{4K HEVC Live Streaming with Extreme Low Latency by NVIDIA Volta GPU}}} - experienced with NVIDIA state-of-art GPUs, e.g. P4, V100.
+    \item \small{\textsf{\textbf{Distributed Live Event Management System with High Availability}}} - powering all of Yahoo hosted live events including Yahoo Finance, Yahoo Taiwan, NHL game, and internal events.
     \end{list}}
     
     \begin{tabularx}{\textwidth}{X r}
@@ -86,6 +84,15 @@
     \item Held office hour (3 hours per week), graded homework and exams
     \item Led, initiated discussions to a class of 200+ student by slides every week (13 weeks)
     \end{list}}
+
+    %Honor................................................................
+    \begin{center}\textrm{\textbf{\large{\underline{Honors}}}}\end{center}
+    \textsf{
+    \begin{tabularx}{\textwidth}{X r}
+        Scholarship at Shanghai Jiao Tong University & Aug 2013 \\
+        Dean's List at University of Michigan & Dec 2013 \\
+        University Honors at University of Michigan & 2013 - 2014
+    \end{tabularx}}
     
     %Project................................................................
     \begin{center}\textrm{\textbf{\large{\underline{Projects}}}}\end{center}
@@ -95,9 +102,9 @@
     \end{tabularx}
     \textsf{
     \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
-    \item Ranked at 1st out of 600 students in the class, presented and shared innovative ideas to the class
+    \item Ranked at 1st out of 600+ Stanford students in the class, presented and shared innovative ideas to the class
     \item Brainstormed features, optimized reward functions, tuned relative scores to handle various scenarios
-    \item Features includes patterns of left foods (gathered is preferable to fragmented); distance to the foods, the closest scared ghost and the closest capsule; number of foods and capsules left
+    \item Features includes patterns of remaining Pac-Dots (gathered is preferable to fragmented); distance to the foods, the closest scared ghost and the closest capsule; number of foods and capsules left
     \end{list}}
 
     \begin{tabularx}{\textwidth}{X r}
@@ -131,7 +138,7 @@
     \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
     \item An Android app which will lower the phone ring automatically when a user is in meeting, cinema, etc
     \item Used Google Calendar API to automatically import potential events from users' calendar
-    \item Could detect user locations (i.e. in cinema) by GPS or WI-FI connection, and adjust the phone ring volume accordingly
+    \item Could detect user locations (e.g. in cinema) by GPS or WI-FI connection, and adjust the phone ring volume accordingly
     \item Designed and implemented database schema, user login, multi-page flatten UI
     \item Published on Google Play (https://play.google.com/store/apps/details?id=com.rey.material.volumaster\&hl=en)
     \end{list}}
@@ -145,24 +152,18 @@
     \item Utilized a python crawler to crawl huge amount of training and testing data from \textit{Rate My Professor} website
     \item Applied Support Vector Machine, Decision Tree, Naive Bayes, KNN, and other machine learning methods to predict disciplines of class from reviews
     \end{list}}
-    
-    %Honor................................................................
-    \begin{center}\textrm{\textbf{\large{\underline{Honors}}}}\end{center}
-    \textsf{
-    \begin{tabularx}{\textwidth}{X r}
-        Scholarship at Shanghai Jiao Tong University & Aug 2013 \\
-        Dean's List at University of Michigan & Dec 2013 \\
-        University Honors at University of Michigan & 2013 - 2014
-    \end{tabularx}}
+
     
     %Technical Skills................................................................
     \begin{center}\textrm{\textbf{\large{\underline{Technical Skills}}}}\end{center}
     \textsf{
     \begin{list}{$\cdot$}{\leftmargin=1.5em}\itemsep -0.5em \vspace{-0.5em}
+    \item Machine learning: TensorFlow, Caffe
+    \item Video processing: FFmpeg/FFprobe, H264, HEVC, HLS
+    \item Cloud computing: AWS, Google Cloud, Kubernetes
     \item Adept in computer programming: C/C++/Java/Python/JavaScript/MATLAB/Mathematica/LaTeX
     \item Object oriented programming, RESTful API design, Test-driven development, Distributed System Design
     \item MySQL/MongoDB, Github, Splunk, Guice, Celery, Django
-    \item Video transcoding, FFmpeg/FFprobe, H264, HLS packaging, Elemental
     \item Languages: Verbally expert in English, mother-tongue in Mandarin
     \end{list}}
 \end{document}
